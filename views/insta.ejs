@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1>Welcome to page of <%=username %></H1>
+    <button>follow</button>
+    <button>message</button>
+    <HR>
+    <% for(post of user_Data.posts) { %>
+     <img src="<%=post.image%>">
+     <p>likes= <%=post.likes%> &nbsp; comments = <%=post.comments%></p>
+    <%}%>
+</body>
+</html>
